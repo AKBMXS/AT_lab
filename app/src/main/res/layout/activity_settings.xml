@@ -1,0 +1,79 @@
+<!-- settings_activity.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Text Size -->
+    <TextView
+        android:id="@+id/textSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Size"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <SeekBar
+        android:id="@+id/textSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSizeLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:progress="50"/>
+
+    <!-- Text Color -->
+    <TextView
+        android:id="@+id/textColorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Color"
+        android:layout_below="@id/textSizeSeekBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <SeekBar
+        android:id="@+id/textColorSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textColorLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="255"
+        android:progress="127"/>
+
+    <!-- Background Contrast -->
+    <TextView
+        android:id="@+id/backgroundContrastLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background Contrast"
+        android:layout_below="@id/textColorSeekBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <SeekBar
+        android:id="@+id/backgroundContrastSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backgroundContrastLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:progress="50"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/backgroundContrastSeekBar"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>
